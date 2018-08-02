@@ -8,3 +8,5 @@
 * [PHP的匿名函数和闭包](PHP的匿名函数和闭包.md)
 * [PHP类多继承的替代方案Traits](PHP类多继承的替代方案Traits.md)
 * [PHP魔术方法小结](PHP魔术方法小结.md)
+* [PHPstorm使用攻略](PHPstorm使用攻略.md)
+* [常用组件篇（不断更新）](常用组件篇（不断更新）.md)
