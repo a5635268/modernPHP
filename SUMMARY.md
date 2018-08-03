@@ -4,7 +4,7 @@
 * [PHP中的多态](PHP中的多态.md)
 * [PHP中的抽象类与接口](PHP中的抽象类与接口.md)
 * [PHP内置的http服务器 [转]](PHP内置的http服务器 [转].md)
-* [PHP断言（ASSERT)的用法](PHP断言（ASSERT)的用法.md)
+* [PHP断言（ASSERT)的用法](PHP断言ASSERT.md)
 * [PHP的匿名函数和闭包](PHP的匿名函数和闭包.md)
 * [PHP类多继承的替代方案Traits](PHP类多继承的替代方案Traits.md)
 * [PHP魔术方法小结](PHP魔术方法小结.md)

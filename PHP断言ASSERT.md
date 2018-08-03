@@ -74,6 +74,13 @@ assert("$func()");
 如果 assertion 是字符串，它将会被 assert() 当做 PHP 代码来执行。跟eval()类似, 不过`eval($assertion)`只是执行符合php编码规范的$code_str。
 
 
+## PHP7中的断言
 
+向后兼用并增强之前的 assert() 的方法。 它使得在生产环境中启用断言为零成本，并且提供当断言失败时抛出特定异常的能力。
 
+```php
+ini_set('assert.exception', 1);
 
+class CustomError extends AssertionError {}
+assert(2 == 1, new CustomError('Some error message'));
+```
