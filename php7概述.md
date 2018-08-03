@@ -1,5 +1,13 @@
 # php7概述
 
+
+[TOC]
+
+
+
+* * * * *
+
+
 ## PHP7性能
 
 7最大的亮点，应该就是性能提高了两倍，某些测试环境下甚至提高到三到五倍，具体可以了解以下链接：
@@ -174,30 +182,89 @@ $data = unserialize($foo, ["allowed_classes" => ["MyClass", "MyClass2"]]);
 $data = unserialize($foo, ["allowed_classes" => true]);
 ```
 
-### assert预期
+### 断言assert
 
-预期是向后兼用并增强之前的 assert() 的方法。 它使得在生产环境中启用断言为零成本，并且提供当断言失败时抛出特定异常的能力。
+向后兼用并增强之前的 assert() 的方法。 它使得在生产环境中启用断言为零成本，并且提供当断言失败时抛出特定异常的能力。
 
 ```php
+ini_set('assert.exception', 1);
 
+class CustomError extends AssertionError {}
+assert(2 == 1, new CustomError('Some error message'));
 ```
+
+### use 加强
+
+从同一 namespace 导入的类、函数和常量现在可以通过单个 use 语句 一次性导入了。
+
+
 ```php
+//  PHP 7 之前版本用法
+use some\namespace\ClassA;
+use some\namespace\ClassB;
+use some\namespace\ClassC as C;
 
+use function some\namespace\fn_a;
+use function some\namespace\fn_b;
+use function some\namespace\fn_c;
+
+use const some\namespace\ConstA;
+use const some\namespace\ConstB;
+use const some\namespace\ConstC;
+
+// PHP 7+ 用法
+use some\namespace\{ClassA, ClassB, ClassC as C};
+use function some\namespace\{fn_a, fn_b, fn_c};
+use const some\namespace\{ConstA, ConstB, ConstC};
 ```
+
+### Generator 加强 ： yield from
+
+增强了Generator的功能，这个可以实现很多先进的特性
+
 ```php
+function gen()
+{
+    yield 1;
+    yield 2;
 
+    yield from gen2();
+}
+
+function gen2()
+{
+    yield 3;
+    yield 4;
+}
+
+foreach (gen() as $val)
+{
+    echo $val, PHP_EOL;
+}
 ```
+
+### 整除
+
+新增了整除函数 intdiv()
+
 ```php
-
+var_dump(intdiv(10, 3)); # 3
 ```
+
+### array_column() 和 list()
+
+新增支持对象数组
+
 ```php
-
-
-
+list($a, $b) = (object) new ArrayObject([0, 1]);
 ```
-```php
 
-```
+> PHP7结果：$a == 0 and $b == 1.
+> PHP5结果：$a == null and $b == null.
+
+### dirname()
+
+增加了可选项$levels，可以用来指定目录的层级。dirname(dirname($foo)) => dirname($foo, 2);
 
 ### Closure::call()
 
@@ -224,4 +291,6 @@ echo "\u{0000aa}";
 echo "\u{9999}";
 ```
 
+更多请参考：
 
+[关于PHP7新特性](http://www.php7.site/book/php7/about-30.html)
