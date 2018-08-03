@@ -1,8 +1,8 @@
 # PHPcomposer使用手札[ing]
 
-标签（空格分隔）： PHP
 
----
+> 本文主要是使用composer中的一些记录
+
 
 ## 参考链接
 
@@ -27,43 +27,42 @@
 composer config -g repo.packagist composer https://packagist.phpcomposer.com
 ```
 
-## composer.json
-
-http://docs.phpcomposer.com/01-basic-usage.html#composer.json-Project-Setup
-
-具体键名说明: http://docs.phpcomposer.com/04-schema.html#JSON-schema
+## [composer.json](http://docs.phpcomposer.com/01-basic-usage.html#composer.json-Project-Setup)
 
 
-## 安装依赖包
-
-http://docs.phpcomposer.com/01-basic-usage.html#Installing-Dependencies
-
-```
-php composer.phar install
-```
-
-报错解决方案:
-1. http://my.oschina.net/chinahub/blog/540109
-2. http://stackoverflow.com/questions/33909559/php-composer-xdebug-warning
+- [具体键名说明](http://docs.phpcomposer.com/04-schema.html#JSON-schema)
 
 
-## composer.lock - 锁文件
 
-http://docs.phpcomposer.com/01-basic-usage.html#composer.lock-The-Lock-File
+## [composer.lock - 锁文件](http://docs.phpcomposer.com/01-basic-usage.html#composer.lock-The-Lock-File)
 
 第一次 `composer install` 以后就会生成这个锁文件，一旦有这个锁文件以后的update就是根据这个锁文件进行更新，如果composer.json 里面有了改变,哪怕一个小小的空格都会导致改变文件的md5sum。然后Composer就会警告你哈希值和composer.lock中记载的不同。
 
-## Packagist
+## [Packagist](http://docs.phpcomposer.com/01-basic-usage.html#Packagist)
 
-http://docs.phpcomposer.com/01-basic-usage.html#Packagist
 
-一些优秀的包：
+一些常用的包：
 
-vinelab/http：https://packagist.org/packages/vinelab/http
+- [http请求类：vinelab/http](https://packagist.org/packages/vinelab/http)
+- [实现依赖注入的容器 topthink/think-container](https://packagist.org/packages/topthink/think-container)
+- [think5.0 ORM](https://packagist.org/packages/topthink/think-orm)
+- [支持文件及SocketLog的日志：topthink/think-log]( https://packagist.org/packages/topthink/think-log)
+- [缓存管理 topthink/think-cache](https://packagist.org/packages/topthink/think-cache)
+- [ 模板引擎 topthink/think-template](https://packagist.org/packages/topthink/think-template)
+- [微信开发]( https://packagist.org/packages/overtrue/wechat)
+- [微信和支付宝支付](https://packagist.org/packages/yansongda/pay)
+- [二维码生成](https://packagist.org/packages/bacon/bacon-qr-code)
+- [条形码生成]( https://packagist.org/packages/milon/barcode)
+- [ 助手类topthink/think-helper](https://packagist.org/packages/topthink/think-helper)
+- [文件下载](https://packagist.org/packages/jkuchar/filedownloader)
+- [图片处理topthink/think-image](https://packagist.org/packages/topthink/think-image)
+- [input验证（laravel）]( https://packagist.org/packages/illuminate/validation)
+- [input验证 topthink/think-validate](https://packagist.org/packages/topthink/think-validate)
+- [日志记录 monolog](https://packagist.org/packages/monolog/monolog) 
 
-## 自动加载
 
-http://docs.phpcomposer.com/01-basic-usage.html#Autoloading
+## [自动加载](http://docs.phpcomposer.com/01-basic-usage.html#Autoloading)
+
 
 autoload提供了一些自动加载的方案，更改完该内容以后就composer update一下；
 
@@ -112,7 +111,7 @@ composer create-project doctrine/orm path 2.2.0
 
 6\. 考虑修改，源代码优先
 
-## 其它博客连接
+## 其它参考
 
 https://lvwenhan.com/tag/Composer/page/2
 
@@ -121,12 +120,7 @@ Composer 项目官方：http://getcomposer.org
 
 Composer Github项目：https://github.com/composer/composer
 
-PHP Composer软件包列表：https://packagist.org/
 
- - [ ] [Composer PHP 依赖管理工具][14]
-
-
-   [14]: http://www.houdunren.com/houdunren18_49_.html
 
   [1]: https://pkg.phpcomposer.com/#how-to-install-composer
   [2]: https://pkg.phpcomposer.com/
