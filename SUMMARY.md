@@ -1,6 +1,6 @@
 * [php7概述](php7概述.md)
 * [PHPcomposer使用手札[ing]](PHPcomposer使用手札[ing].md)
-* [PHP的依赖注入](PHP的依赖注入.md)
+* [依赖倒置，依赖注入，控制反转，服务容器](PHP的依赖注入.md)
 * [PHP 反射机制Reflection](PHP 反射机制Reflection.md)
 * [PHP 生成器语法](PHP 生成器语法.md)
 * [PHP中的多态](PHP中的多态.md)
