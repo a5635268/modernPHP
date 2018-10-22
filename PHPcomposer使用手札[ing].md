@@ -7,7 +7,7 @@
 ## 参考链接
 
 中文文档： http://www.phpcomposer.com/
-五个技巧：http://www.jb51.net/article/53881.htm
+
 
 ## composer的原理步骤
 
@@ -27,7 +27,7 @@
 composer config -g repo.packagist composer https://packagist.phpcomposer.com
 ```
 
-## [composer.json](http://docs.phpcomposer.com/01-basic-usage.html#composer.json-Project-Setup)
+## [composer.json](https://docs.phpcomposer.com/04-schema.html)
 
 
 - [具体键名说明](http://docs.phpcomposer.com/04-schema.html#JSON-schema)
