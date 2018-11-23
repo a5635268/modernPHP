@@ -15,3 +15,4 @@
 * [日期与金额](日期与金额.md)
 * [PHPstorm使用攻略](PHPstorm使用攻略.md)
 * [Zend Opcache字节码缓存](ZendOpcache.md)
+* [PHP匿名类closure](匿名类.md)
