@@ -16,3 +16,4 @@
 * [PHPstorm使用攻略](PHPstorm使用攻略.md)
 * [Zend Opcache字节码缓存](ZendOpcache.md)
 * [PHP匿名类closure](匿名类.md)
+* [理解php的output buffer](理解php的outputbuffer.md)
