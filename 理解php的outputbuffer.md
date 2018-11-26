@@ -61,12 +61,12 @@ curl 'niliu.me' --no_buffer
 var_dump(ob_get_level()); // out: 1, 一级缓冲区
 if (ob_get_level() == 0) {
     // 如果没缓冲区，就开启新的PHP缓冲区
+    // 默认会有一块缓冲区，默认的缓冲区其实是很小的，所以不用什么str_pad撑满
     ob_start();
 }
 for ($i = 0;$i < 10;$i ++) {
     echo "Line to show.";
     // nginx fastcgi缓冲区大小是4K，需要发送额外4K空格；
-    //  Apache其实不需要
     //  echo str_pad('',4096)."\n";
 
     // php缓存刷入Apache/nginx
