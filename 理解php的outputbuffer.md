@@ -1,9 +1,3 @@
-# 理解php的output buffer
-
-标签（空格分隔）： PHP
-
----
-
 ## 理论篇
 
 ### 1.  磁盘高速缓存(Disk Cache)
