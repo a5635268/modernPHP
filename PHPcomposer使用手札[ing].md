@@ -1,6 +1,3 @@
-# PHPcomposer使用笔记[ing]
-
-
 > 本文主要是使用composer中的一些记录
 
 

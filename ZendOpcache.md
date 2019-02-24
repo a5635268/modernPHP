@@ -1,6 +1,3 @@
-# PHP的Zend Opcache字节码缓存
-
-
 ## 概述
 
 字节码缓存不是PHP的新特性，有很多独立的扩展可以实现，比如APC、eAccelerator和Xache等，但是截至目前这些扩展都没有集成到PHP内核，从PHP 5.5.0开始，PHP内置了字节码缓存功能，名为Zend Opcache。
