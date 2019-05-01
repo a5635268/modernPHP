@@ -108,6 +108,8 @@ composer create-project doctrine/orm path 2.2.0
 
 6\. 考虑修改，源代码优先
 
+7\. `composer show -i` 查看当前已安装的包列表及其各自的版本
+
 ## 其它参考
 
 https://lvwenhan.com/tag/Composer/page/2
