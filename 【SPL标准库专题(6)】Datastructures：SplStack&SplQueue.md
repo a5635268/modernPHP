@@ -1,9 +1,3 @@
-# 【SPL标准库专题(5)】 Datastructures：SplStack & SplQueue  
-
-标签（空格分隔）： SPL 
-
----
-
 这两个类都是继承自`SplDoublyLinkedList`，分别派生自`SplDoublyLinkedList`的堆栈模式和队列模式；所以放在一起来介绍；
 
 ## 堆栈SplStack 

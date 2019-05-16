@@ -1,9 +1,3 @@
-# 【SPL标准库专题(8)】 Datastructures：SplFixedArray  
-
-标签（空格分隔）： SPL 
-
----
-
 SplFixedArray主要是处理数组相关的主要功能，与普通php array不同的是，**它是固定长度的，且以数字为键名的数组**，优势就是比普通的数组处理更快。
 
 ## 类摘要

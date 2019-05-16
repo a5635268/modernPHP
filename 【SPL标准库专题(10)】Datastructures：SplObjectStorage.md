@@ -1,9 +1,3 @@
-# 【SPL标准库专题(9)】 Datastructures：SplObjectStorage  
-
-标签（空格分隔）： SPL 
-
----
-
 PHP SPL SplObjectStorage是用来存储一组对象的，特别是当你需要唯一标识对象的时候。
 PHP SPL SplObjectStorage类实现了Countable,Iterator,Serializable,ArrayAccess四个接口。可实现统计、迭代、序列化、数组式访问等功能。
 

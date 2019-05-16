@@ -1,6 +1,3 @@
-# 【SPL标准库专题(1)】 SPL简介
-
-
 ## 什么是SPL
 
 SPL是Standard PHP Library（PHP标准库）的缩写。
