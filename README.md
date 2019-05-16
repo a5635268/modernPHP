@@ -1,5 +1,7 @@
 # modernPHP
 
+![](./cover.jpg)
+
 现在PHP特性文章的整理与编辑。
 
 有些PHPer基于框架干了好几年的CURD，却连有些最基础的知识点都不知道，不知道`new static()`与`new self()`的区别，不知道什么是反射机制，不知道SPL等等。
