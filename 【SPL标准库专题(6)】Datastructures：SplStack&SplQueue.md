@@ -38,7 +38,7 @@ foreach($stack as $item) {
 print_R($stack); //测试IteratorMode
 ```
 
-### 队列SplQueue 
+## 队列SplQueue
 
 ![804515552.png-10.1kB][2]
 
